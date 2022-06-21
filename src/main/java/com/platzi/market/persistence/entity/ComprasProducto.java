@@ -16,7 +16,7 @@ public class ComprasProducto {
     private boolean estado;
 
     @ManyToOne
-    @JoinColumn(name = "id_compra", insertable = true, updatable = true)
+    @JoinColumn(name = "id_compra", insertable = false, updatable = false)
     private Compra compra;
 
     @ManyToOne
